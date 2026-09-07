@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>GameVault</title>
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
+</head>
+
+<body>
+
+  <!-- BACKGROUND DECORATION -->
+  <div class="background-lines"></div>
+
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+      <div class="brand">
+
+        <div class="logo">
+          
+  <img src="https://png.pngtree.com/png-clipart/20220603/original/pngtree-game-stick-icon-design-png-image_7903151.png"
+
+    alt="GameVault Logo"
+  >
+</div>
+
+        <div>
+
+          <div class="small-title">
+          
+          </div>
+
+          <h1>
+            Game<span>Vault</span>
+          </h1>
+
+          <p>
+            Game Collection
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- GAME COUNTER -->
+
+      <div class="counter">
+
+        <strong id="totalGames">
+          10
+        </strong>
+
+        <small>
+          OF 10 TOTAL
+        </small>
+
+      </div>
+
+    </header>
+
+
+    <!-- =========================
+         DASHBOARD
+    ========================== -->
+
+    <section class="dashboard">
+
+
+      <!-- LEFT SIDE -->
+
+      <div class="games-area">
+
+        <div
+          id="gameGrid"
+          class="game-grid"
+        ></div>
+
+      </div>
+
+
+      <!-- RIGHT SIDEBAR -->
+
+      <aside class="sidebar">
+
+
+        <!-- PLATFORM PANEL -->
+
+        <div class="panel">
+
+          <div class="panel-title">
+            PLATFORMS
+          </div>
+
+          <button
+            class="platform active"
+            data-platform="All"
+          >
+            <span>All</span>
+            <strong id="allCount">10</strong>
+          </button>
+
+
+          <button
+            class="platform"
+            data-platform="PC"
+          >
+            <span>PC</span>
+            <strong>5</strong>
+          </button>
+
+
+          <button
+            class="platform"
+            data-platform="PlayStation"
+          >
+            <span>PlayStation</span>
+            <strong>6</strong>
+          </button>
+
+
+          <button
+            class="platform"
+            data-platform="Xbox"
+          >
+            <span>Xbox</span>
+            <strong>2</strong>
+          </button>
+
+
+        
+
+        </div>
+
+
+        <!-- ADD GAME -->
+
+        <div class="add-panel">
+
+          <h2>
+             ADD GAME
+          </h2>
+
+          <form id="gameForm">
+
+            <input
+              id="title"
+              type="text"
+              placeholder="Game title"
+              required
+            >
+
+
+            <input
+              id="image"
+              type="url"
+              placeholder="Image URL"
+            >
+
+
+            <select id="platformInput">
+
+              <option value="PC">
+                PC
+              </option>
+
+              <option value="PlayStation">
+                PlayStation
+              </option>
+
+              <option value="Xbox">
+                Xbox
+              </option>
+
+
+            </select>
+
+
+            <select id="rating">
+
+              <option value="1">
+                1 / 5
+              </option>
+
+              <option value="2">
+                2 / 5
+              </option>
+
+              <option value="3">
+                3 / 5
+              </option>
+
+              <option value="4">
+                4 / 5
+              </option>
+
+              <option value="5" selected>
+                5 / 5
+              </option>
+
+            </select>
+
+
+            <button
+              type="submit"
+              class="add-button"
+            >
+              + ADD TO VAULT
+            </button>
+
+          </form>
+
+        </div>
+
+      </aside>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
