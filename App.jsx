@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-  <link rel="icon" type="image/x-icon" href="images favicon.png">
+ 
 
 // ========================================
 // GAME DATA
